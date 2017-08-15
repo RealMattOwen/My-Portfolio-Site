@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matt Owen Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:regular,bold" rel="stylesheet">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="scss/index.css">
+</head>
+
+    <body>
+        <div id="header">
+            <nav class="nav">
+                <li><a id="logo" data-scroll="home">Matt Owen Sites</a></li>
+                <li class="nav-icon"><i id="mobile-nav" class="icon-bars"></i></li>
+                <ul>
+                    <li><a class="active" data-scroll="home">Home</a></li>
+                    <li><a data-scroll="skills">Skills</a></li>
+                    <li><a data-scroll="work">Work</a></li>
+                    <li><a data-scroll="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="welcome" data-anchor="home">
+            <h1>Hi there! I'm the new kid on the block<br>and I build awesome websites and web apps.</h1>
+            <button id="work-with-me" title="Work with me" data-scroll="contact">Work with me!</button>
+        </div>
+        <div id="skills" data-anchor="skills">
+            <h1>I got skills!</h1>
+            <hr>
+            <p id="example-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt<br>felis laoreet velit mattis congue. Donec vitae ultrice velit.</p>
+            <section class="progress">
+                <div class="progress-radial far-left setsize">
+                    <div class="overlay setsize">
+                        <p>90<span class="percentage">%</span></p>
+                    </div>
+                    <p class="radial-label">HTML</p>
+                </div>
+                <div class="progress-radial left setsize">
+                    <div class="overlay setsize">
+                        <p>75<span class="percentage">%</span></p>
+                    </div>
+                    <p class="radial-label">CSS</p>
+                </div>
+                <div class="progress-radial right setsize">
+                    <div class="overlay setsize">
+                        <p>70<span class="percentage">%</span></p>
+                    </div>
+                    <p class="radial-label">JS</p>
+                </div>
+                <div class="progress-radial far-right setsize">
+                    <div class="overlay setsize">
+                        <p>45<span class="percentage">%</span></p>
+                    </div>
+                    <p class="radial-label">NODE</p>
+                </div>
+            </section>
+        </div>
+        <div id="portfolio" data-anchor="work">
+            <h1>My portfolio</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt felis laoreet velit mattis congue. Donec vitae ultrice velit.</p>
+            <div id="project-filters">
+                <button class="filter-btn active-filter" title="All projects">All</button>
+                <button class="filter-btn" title="Websites only">Websites</button>
+                <button class="filter-btn" title="Web apps only">Web Apps</button>
+                <button class="filter-btn" title="Other projects">Other</button>
+            </div>
+            <div id="projects">
+
+            </div>
+            <button id="load-more-projects" title="Load more projects">Load more projects</button>
+        </div>
+        <div id="contact" data-anchor="contact">
+            <h1>Get In Touch</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt felis laoreet velit mattis congue. Donec vitae ultrice velit.</p>
+            <form id="contact-form" action="php/contact.php">
+                <div class="contact-inputs">
+                    <div class="contact-input"><input id="name" name="name" placeholder="Your Name"></div>
+                    <div class="contact-input"><input id="email" name="email" placeholder="Your Email"></div>
+                </div>
+                <div class="contact-content"><textarea id="message" name="message" placeholder="Your Message"></textarea></div>
+                <div id="submit-btn">
+                    <button id="contact-btn" title="Send me a message">Send message</button>
+                </div>
+                <div id="validation"></div>
+            </form>
+        </div>
+        <div id="footer">
+            <footer>
+                <ul>
+                    <li><a href="https://twitter.com/RealMattOwen" title="Follow me on Twitter"><i class="icon-twitter-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/matthew-r-owen/" title="Follow me on LinkedIn"><i class="icon-linkedin-square"></i></a></li>
+                    <li><a href="https://github.com/RealMattOwen" title="Follow me on GitHub"><i class="icon-github-square"></i></a></li>
+                </ul>
+            </footer>
+        </div>
+        <div id="scrollToTop" title="Go to top" data-scroll="home"><i class="icon-angle-up"></i></div>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
