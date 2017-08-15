@@ -100,10 +100,10 @@ $(document).ready(function() {
 
     const projects = [
         {
-            name : 'Project 1',
-            image : 'images/test%20image.png',
-            github : 'https://www.github.com/realmattowen',
-            live : 'https://www.realmattowen.com/Project%201',
+            name : 'My Portfolio Site',
+            image : 'images/My%20Portfolio.png',
+            github : 'https://github.com/RealMattOwen/My-Portfolio-Site',
+            live : 'https://www.realmattowen.com/',
             type : 'websites'
         },
         {
