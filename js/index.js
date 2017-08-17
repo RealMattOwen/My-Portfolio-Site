@@ -105,7 +105,7 @@ $(document).ready(function() {
     const projects = [
         {
             name : 'My Portfolio Site',
-            image : 'images/My%20Portfolio.png',
+            image : 'images/Matt%20Owen%20Portfolio.png',
             github : 'https://github.com/RealMattOwen/My-Portfolio-Site',
             live : 'https://www.realmattowen.com/',
             type : 'websites'
