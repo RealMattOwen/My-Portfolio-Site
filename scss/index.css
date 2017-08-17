@@ -126,7 +126,8 @@ a, button, div {
   border: 0; }
 
 #skill-text {
-  text-align: justify; }
+  text-align: justify;
+  line-height: 24px; }
 
 #portfolio {
   width: 100%;
@@ -420,7 +421,7 @@ a, button, div {
     margin-top: 70px; }
 
   #skill-text {
-    margin: 30px auto 50px;
+    margin: 30px auto 80px;
     font-size: 15px;
     width: 80%; }
 
