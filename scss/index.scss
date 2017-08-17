@@ -147,156 +147,8 @@ a, button, div {
 	border: 0;
 }
 
-#example-text {
-	text-align: center;
-}
-
-.progress {
-	display: flex;
-	justify-content: center;
-}
-
-.progress-radial, .progress-radial * {
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-}
-
-.progress-radial {
-	margin: 0 3%;
-	position: relative;
-	height: 150px;
-	width: 150px;
-	border-radius: 50%;
-}
-
-.progress-radial .overlay {
-	position: absolute;
-	height: 115px;
-	width: 115px;
-	background-color: #fff;
-	border-radius: 50%;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-
-.progress-radial .overlay p {
-	position: absolute;
-	line-height: 40px;
-	text-align: center;
-	width: 100%;
-	top: 50%;
-	margin-top: -20px;
-	left: 4px;
-}
-
-.radial-label {
-	text-align: center;
-	margin-top: 110%;
-	font-weight: bold;
-}
-
-@mixin progress-0($colour) {
-	background-image: linear-gradient(90deg, #dfe8ed 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(90deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-5($colour) {
-	background-image: linear-gradient(90deg, #dfe8ed 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(108deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-10($colour) {
-	background-image: linear-gradient(90deg, #dfe8ed 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(126deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-15($colour) {
-	background-image: linear-gradient(90deg, #dfe8ed 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(144deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-20($colour) {
-	background-image: linear-gradient(90deg, #dfe8ed 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(162deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-25($colour) {
-	background-image: linear-gradient(90deg, #dfe8ed 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(180deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-30($colour) {
-	background-image: linear-gradient(90deg, #dfe8ed 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(198deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-35($colour) {
-	background-image: linear-gradient(90deg, #dfe8ed 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(216deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-40($colour) {
-	background-image: linear-gradient(90deg, #dfe8ed 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(234deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-45($colour) {
-	background-image: linear-gradient(90deg, #dfe8ed 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(252deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-50($colour) {
-	background-image: linear-gradient(-90deg, $colour 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-55($colour) {
-	background-image: linear-gradient(-72deg, $colour 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-60($colour) {
-	background-image: linear-gradient(-54deg, $colour 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-65($colour) {
-	background-image: linear-gradient(-36deg, $colour 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-70($colour) {
-	background-image: linear-gradient(-18deg, $colour 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-75($colour) {
-	background-image: linear-gradient(0deg, $colour 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-80($colour) {
-	background-image: linear-gradient(18deg, $colour 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-85($colour) {
-	background-image: linear-gradient(36deg, $colour 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-90($colour) {
-	background-image: linear-gradient(54deg, $colour 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-95($colour) {
-	background-image: linear-gradient(72deg, $colour 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-@mixin progress-100($colour) {
-	background-image: linear-gradient(90deg, $colour 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, $colour 50%, #dfe8ed 50%, #dfe8ed);
-}
-
-.far-left {
-	@include progress-90(#414551);
-}
-
-.left {
-	@include progress-75(#ccc0b0);
-}
-
-.right {
-	@include progress-70(#30303a);
-}
-
-.far-right {
-	@include progress-45(#ec5e6c);
+#skill-text {
+	text-align: justify;
 }
 
 #portfolio {
@@ -636,32 +488,10 @@ a, button, div {
 		margin-top: 70px;
 	}
 
-	#example-text {
-		margin: 30px auto 0;
+	#skill-text {
+		margin: 30px auto 50px;
 		font-size: 15px;
 		width: 80%;
-	}
-
-	.progress {
-		margin: 30px auto 80px;
-		flex-wrap: wrap;
-		width: 200px;
-	}
-
-	.progress-radial {
-		margin: 30px auto;
-	}
-
-	.progress-radial .overlay {
-		font-size: 46px;
-	}
-
-	.percentage {
-		font-size: 32px;
-	}
-
-	.radial-label {
-		font-size: 26px;
 	}
 
 	#portfolio h1 {
@@ -754,14 +584,11 @@ a, button, div {
 @media only screen and (min-width : 480px) {
 	#welcome h1 {
 		font-size: 23px;
+		width: 362px;
 	}
 
 	#work-with-me {
 		width: 336px;
-	}
-
-	.progress {
-		width: 448px;
 	}
 
 	.project {
@@ -806,7 +633,7 @@ a, button, div {
 	#welcome h1 {
 		margin-top: 70px;
 		font-size: 32px;
-		width: auto;
+		width: 550px;
 	}
 
 	#work-with-me {
@@ -814,15 +641,8 @@ a, button, div {
 		font-size: 16px;
 	}
 
-	#example-text {
-		margin: 30px auto 0;
+	#skill-text {
 		font-size: 18px;
-		width: 80%;
-	}
-
-	.progress {
-		margin: 30px auto 80px;
-		flex-wrap: wrap;
 	}
 
 	#project-filters {
@@ -898,16 +718,7 @@ a, button, div {
 	#welcome h1 {
 		margin-top: 80px;
 		font-size: 38px;
-	}
-
-	.progress {
-		width: 80%;
-		margin: 50px auto 120px;
-		flex-wrap: nowrap;
-	}
-
-	.progress-radial {
-		margin: 0 3%;
+		width: 596px;
 	}
 
 	#work-with-me {
@@ -946,6 +757,7 @@ a, button, div {
 	#welcome h1 {
 		margin-top: 100px;
 		font-size: 42px;
+		width: 660px;
 	}
 
 	#work-with-me {
@@ -957,18 +769,9 @@ a, button, div {
 		margin-top: 100px;
 	}
 
-	#example-text {
-		margin: 50px auto 0;
+	#skill-text {
 		font-size: 20px;
-	}
-
-	.progress {
-		width: 80%;
-		margin: 70px auto 120px;
-	}
-
-	.progress-radial {
-		margin: 0 3%;
+		width: 50%;
 	}
 
 	#portfolio h1 {

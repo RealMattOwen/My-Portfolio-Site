@@ -84,16 +84,22 @@ $(document).ready(function() {
     $('.filter-btn').click(function() {
         $('.filter-btn').removeClass('active-filter');
         $(this).addClass('active-filter');
+        if ($('#no-projects').length) {
+            $('#no-projects').remove();
+        }
         if (this.innerText !== 'ALL') {
             projectFilter(this.innerText);
         } else {
             $('.project').fadeIn();
-            $('#projects').css('margin', '15px auto 0');
+            // $('#projects').css('margin', '15px auto 0');
+            // if (i !== projects.length) {
+            //     $('#load-more-projects').fadeIn();
+            // }
             if (i !== projects.length) {
+                $('#projects').css('margin', '15px auto 0');
                 $('#load-more-projects').fadeIn();
-            }
-            if ($('#no-projects').length) {
-                $('#no-projects').remove();
+            } else {
+                $('#projects').css('margin', '15px auto 70px');
             }
         }
     });
@@ -128,17 +134,17 @@ $(document).ready(function() {
             type : 'websites'
         }
         // {
-        //     name : 'Project 2',
+        //     name : 'Project 5',
         //     image : 'images/test%20image.png',
         //     github : 'https://www.github.com/realmattowen',
-        //     live : 'https://www.realmattowen.com/Project%202'
+        //     live : 'https://www.realmattowen.com/Project%202',
         //     type : 'web apps'
         // },
         // {
-        //     name : 'Project 3',
+        //     name : 'Project 6',
         //     image : 'images/test%20image.png',
         //     github : 'https://www.github.com/realmattowen',
-        //     live : 'https://www.realmattowen.com/Project%203'
+        //     live : 'https://www.realmattowen.com/Project%203',
         //     type : 'other'
         // }
     ];
@@ -221,7 +227,6 @@ $(document).ready(function() {
             } else {
                 $('#projects').css('margin', '15px auto 0');
             }
-            $('#no-projects').remove();
         }
     };
 
