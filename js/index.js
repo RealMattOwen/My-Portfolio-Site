@@ -91,10 +91,6 @@ $(document).ready(function() {
             projectFilter(this.innerText);
         } else {
             $('.project').fadeIn();
-            // $('#projects').css('margin', '15px auto 0');
-            // if (i !== projects.length) {
-            //     $('#load-more-projects').fadeIn();
-            // }
             if (i !== projects.length) {
                 $('#projects').css('margin', '15px auto 0');
                 $('#load-more-projects').fadeIn();
