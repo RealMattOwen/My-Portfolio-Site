@@ -30,8 +30,6 @@ $(document).ready(function() {
         });
     }
 
-
-
     function scrollToSection (element) {
         let scrollAnchor = element.attr('data-scroll'),
             scrollPoint = $('div[data-anchor="' + scrollAnchor + '"]').offset().top - 70;
