@@ -64,11 +64,11 @@ $(document).ready(function () {
             navItems.removeClass('active');
             navItems.eq(0).addClass('active');
         }
-        if ($(_this).scrollTop() >= $('div[data-anchor="skills"]').offset().top - 71) {
+        if ($(_this).scrollTop() >= $('div[data-anchor="work"]').offset().top - 71) {
             navItems.removeClass('active');
             navItems.eq(1).addClass('active');
         }
-        if ($(_this).scrollTop() >= $('div[data-anchor="work"]').offset().top - 71) {
+        if ($(_this).scrollTop() >= $('div[data-anchor="about"]').offset().top - 71) {
             navItems.removeClass('active');
             navItems.eq(2).addClass('active');
         }

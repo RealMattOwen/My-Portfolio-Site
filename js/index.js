@@ -30,6 +30,8 @@ $(document).ready(function() {
         });
     }
 
+
+
     function scrollToSection (element) {
         let scrollAnchor = element.attr('data-scroll'),
             scrollPoint = $('div[data-anchor="' + scrollAnchor + '"]').offset().top - 70;
@@ -61,11 +63,11 @@ $(document).ready(function() {
             navItems.removeClass('active');
             navItems.eq(0).addClass('active');
         }
-        if ($(this).scrollTop() >= $('div[data-anchor="skills"]').offset().top - 71) {
+        if ($(this).scrollTop() >= $('div[data-anchor="work"]').offset().top - 71) {
             navItems.removeClass('active');
             navItems.eq(1).addClass('active');
         }
-        if ($(this).scrollTop() >= $('div[data-anchor="work"]').offset().top - 71) {
+        if ($(this).scrollTop() >= $('div[data-anchor="about"]').offset().top - 71) {
             navItems.removeClass('active');
             navItems.eq(2).addClass('active');
         }

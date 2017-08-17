@@ -108,27 +108,6 @@ a, button, div {
   box-shadow: 0 3px #a54651;
   transform: translateY(3px); }
 
-#skills {
-  width: 100%;
-  background-color: #fff;
-  overflow: hidden; }
-
-#skills h1 {
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold; }
-
-#skills hr {
-  margin-top: 10px;
-  height: 3px;
-  width: 80px;
-  background-color: #dfe8ed;
-  border: 0; }
-
-#skill-text {
-  text-align: justify;
-  line-height: 24px; }
-
 #portfolio {
   width: 100%;
   background-color: #ccc0b0;
@@ -242,6 +221,27 @@ a, button, div {
 #load-more-projects:active {
   box-shadow: 0 3px #2f3542;
   transform: translateY(3px); }
+
+#about-me {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden; }
+
+#about-me h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold; }
+
+#about-me hr {
+  margin-top: 10px;
+  height: 3px;
+  width: 80px;
+  background-color: #dfe8ed;
+  border: 0; }
+
+#about-me-text {
+  text-align: justify;
+  line-height: 31px; }
 
 #contact {
   width: 100%;
@@ -416,15 +416,6 @@ a, button, div {
     height: 60px;
     font-size: 16px; }
 
-  #skills h1 {
-    font-size: 40px;
-    margin-top: 70px; }
-
-  #skill-text {
-    margin: 30px auto 80px;
-    font-size: 15px;
-    width: 80%; }
-
   #portfolio h1 {
     font-size: 30px;
     margin-top: 60px; }
@@ -457,6 +448,15 @@ a, button, div {
   #contact h1 {
     font-size: 30px;
     margin-top: 50px; }
+
+  #about-me h1 {
+    font-size: 40px;
+    margin-top: 70px; }
+
+  #about-me-text {
+    margin: 30px auto 80px;
+    font-size: 15px;
+    width: 80%; }
 
   #contact p {
     width: 80%;
@@ -539,7 +539,7 @@ a, button, div {
     width: 280px;
     font-size: 16px; }
 
-  #skill-text {
+  #about-me-text {
     font-size: 18px; }
 
   #project-filters {
@@ -633,14 +633,6 @@ a, button, div {
   #work-with-me {
     margin: 50px auto 100px; }
 
-  #skills h1 {
-    font-size: 40px;
-    margin-top: 100px; }
-
-  #skill-text {
-    font-size: 20px;
-    width: 50%; }
-
   #portfolio h1 {
     font-size: 40px;
     margin-top: 100px; }
@@ -664,6 +656,14 @@ a, button, div {
     width: 280px;
     height: 60px;
     font-size: 18px; }
+
+  #about-me h1 {
+    font-size: 40px;
+    margin-top: 100px; }
+
+  #about-me-text {
+    font-size: 20px;
+    width: 50%; }
 
   #contact h1 {
     font-size: 40px;
