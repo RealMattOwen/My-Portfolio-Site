@@ -153,7 +153,7 @@ $(document).ready(function () {
 
         var projectLive = projects[i].live;
 
-        var newProject = '<div class="project">\n                        <img src="' + projectImage + '">\n                        <div class="overlay">\n                            <div class="inner-overlay">\n                                <a href="' + projectLive + '" target="_blank" title="' + projectName + '"><h2>' + projectName + '</h2></a>\n                                <a href="' + projectGithub + '" target="_blank" title="The GitHub repo for ' + projectName + '"><i class="icon-github-square"></i></a>\n                            </div>\n                        </div>\n                    </div>';
+        var newProject = '<div class="project">\n                        <img src="' + projectImage + '">\n                        <div class="overlay">\n                            <div class="inner-overlay">\n                                <a href="' + projectLive + '" target="_blank" title="Live version of: ' + projectName + '"><h2>' + projectName + '</h2></a>\n                                <a href="' + projectGithub + '" target="_blank" title="The GitHub repo for ' + projectName + '"><i class="icon-github-square"></i></a>\n                            </div>\n                        </div>\n                    </div>';
 
         $('#projects').append(newProject);
     };

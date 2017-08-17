@@ -158,7 +158,7 @@ $(document).ready(function() {
                         <img src="${projectImage}">
                         <div class="overlay">
                             <div class="inner-overlay">
-                                <a href="${projectLive}" target="_blank" title="${projectName}"><h2>${projectName}</h2></a>
+                                <a href="${projectLive}" target="_blank" title="Live version of: ${projectName}"><h2>${projectName}</h2></a>
                                 <a href="${projectGithub}" target="_blank" title="The GitHub repo for ${projectName}"><i class="icon-github-square"></i></a>
                             </div>
                         </div>
