@@ -141,7 +141,7 @@ $(document).ready(function() {
 
     let i = 0;
 
-    for (i; i < 3; i++) {
+    for (i; i < 2; i++) {
         createProject();
 
         if (i === projects.length - 1) {
