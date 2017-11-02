@@ -111,7 +111,7 @@ $(document).ready(function () {
         type: 'web apps'
     }, {
         name: 'Discord Role Bot',
-        image: 'images/Role%20Bot.png',
+        image: 'https://media.discordapp.net/attachments/331235961671385088/375788270786969600/bots.jpg',
         github: 'https://github.com/RealMattOwen/Discord-Role-Bot',
         live: '',
         type: 'other'
