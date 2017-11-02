@@ -104,17 +104,17 @@ $(document).ready(function () {
     });
 
     var projects = [{
+        name: 'TMDB Movie Search',
+        image: 'images/TMDB%20Movie%20Search.png',
+        github: 'https://github.com/RealMattOwen/TMDB-Movie-Search',
+        live: 'https://tmdb-movie-search.herokuapp.com/',
+        type: 'web apps'
+    }, {
         name: 'Discord Role Bot',
         image: 'images/Role%20Bot.png',
         github: 'https://github.com/RealMattOwen/Discord-Role-Bot',
         live: '',
         type: 'other'
-    }, {
-        name: 'TMDB Movie Search',
-        image: 'images/TMDB%20Movie%20Search.png',
-        github: 'https://github.com/RealMattOwen/TMDB-Movie-Search',
-        live: 'https://www.tmdb-movie-search.herokuapp.com/',
-        type: 'web apps'
     }];
 
     var createProject = function createProject() {
