@@ -104,45 +104,18 @@ $(document).ready(function () {
     });
 
     var projects = [{
-        name: 'My Portfolio Site',
-        image: 'images/Matt%20Owen%20Portfolio.png',
-        github: 'https://github.com/RealMattOwen/My-Portfolio-Site',
-        live: 'https://www.realmattowen.com/',
-        type: 'websites'
+        name: 'Discord Role Bot',
+        image: 'images/Role%20Bot.png',
+        github: 'https://github.com/RealMattOwen/Discord-Role-Bot',
+        live: '',
+        type: 'other'
     }, {
-        name: 'Project 2',
-        image: 'images/test%20image.png',
-        github: 'https://www.github.com/realmattowen',
-        live: 'https://www.realmattowen.com/Project%202',
-        type: 'websites'
-    }, {
-        name: 'Project 3',
-        image: 'images/test%20image.png',
-        github: 'https://www.github.com/realmattowen',
-        live: 'https://www.realmattowen.com/Project%203',
-        type: 'websites'
-    }, {
-        name: 'Project 4',
-        image: 'images/test%20image.png',
-        github: 'https://www.github.com/realmattowen',
-        live: 'https://www.realmattowen.com/Project%204',
-        type: 'websites'
-    }
-    // {
-    //     name : 'Project 5',
-    //     image : 'images/test%20image.png',
-    //     github : 'https://www.github.com/realmattowen',
-    //     live : 'https://www.realmattowen.com/Project%202',
-    //     type : 'web apps'
-    // },
-    // {
-    //     name : 'Project 6',
-    //     image : 'images/test%20image.png',
-    //     github : 'https://www.github.com/realmattowen',
-    //     live : 'https://www.realmattowen.com/Project%203',
-    //     type : 'other'
-    // }
-    ];
+        name: 'TMDB Movie Search',
+        image: 'images/TMDB%20Movie%20Search.png',
+        github: 'https://github.com/RealMattOwen/TMDB-Movie-Search',
+        live: 'https://www.tmdb-movie-search.herokuapp.com/',
+        type: 'web apps'
+    }];
 
     var createProject = function createProject() {
         var projectName = projects[i].name;
@@ -160,7 +133,7 @@ $(document).ready(function () {
 
     var i = 0;
 
-    for (i; i < 4; i++) {
+    for (i; i < 3; i++) {
         createProject();
 
         if (i === projects.length - 1) {
